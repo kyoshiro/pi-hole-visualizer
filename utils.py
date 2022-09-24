@@ -41,7 +41,7 @@ def retrieve_hash(address):
     pw_hash = ''
 
     if address == '127.0.0.1':
-        config_path = '/etc/pihole/setupVars.conf'
+        config_path = '/srv/docker/data/pihole/etc-pihole/setupVars.conf'
 
         if os.getegid() != 0:
             return pw_hash
